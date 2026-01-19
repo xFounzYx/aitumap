@@ -44,11 +44,9 @@ const MapProvider = ({ children }) => {
   };
 
   const handleSearchInput = (e) => {
-    const regex = /^[0-9cCpPlLkK.]+$/;
-    if (regex.test(e.target.value) || e.target.value === "") {
-      setSearch(e.target.value);
-    }
+    setSearch(e.target.value);
   };
+
 
   const handleFloorOptionClick = (e) => {
     let name = e.target.name;
